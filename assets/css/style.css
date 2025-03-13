@@ -1,13 +1,10 @@
 /* IMPOSTAZIONI GENERALI */
-* {
-  box-sizing: border-box;
-}
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url(/assets/img/sfondo.png);
-  line-height: 1.5;
-  vertical-align: auto;
+  background-image: url(../img/sfondo.png);
+  line-height: 1.4;
+  padding: 1rem;
 }
 
 hr {
@@ -29,12 +26,9 @@ h2 {
   margin: 0.75em 0;
 }
 
-strong {
-  color: purple;
-}
-
-ul {
-  list-style: inside;
+main ul {
+  list-style: disc;
+  padding-left: 20;
 }
 
 ol {
@@ -42,39 +36,51 @@ ol {
 }
 /* HEADER */
 header {
-  background: linear-gradient(3600deg, rgba(2, 109, 136, 1) 20%, rgba(0, 156, 194, 1) 100%);
+  background-image: linear-gradient(3600deg, rgba(2, 109, 136, 1) 20%, rgba(0, 156, 194, 1) 100%);
   box-shadow: 0px 5px 5px 0px rgb(90, 90, 90);
   text-transform: uppercase;
   color: white;
   font-weight: 600;
   text-align: center;
-  width: 90%;
-  margin: 1rem auto;
+  margin-bottom: 2rem;
+  padding: 2rem;
 }
 
-header .logo {
-  padding: 1rem;
+header p {
+  margin: 1rem;
 }
 
 header a {
-  color: white;
+  color: inherit; /* will get the white colour from header */
   text-decoration: none;
 }
 
 /* MAIN */
 
 main {
-  background: white;
+  background-color: white;
   box-shadow: 0px 5px 5px 0px rgb(90, 90, 90);
   color: black;
-  width: 90%;
-  margin: 1rem auto;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
 .icons {
   color: grey;
   margin: 1rem auto;
+}
+
+code {
+  display: inline-block;
+  background-color: rgba(224, 224, 224, 0.671);
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding-block: 0.25rem;
+}
+
+strong {
+  font-weight: bold;
+  color: purple;
 }
 /* TABELLE */
 
@@ -85,10 +91,8 @@ main {
 /* FOOTER */
 
 footer {
-  background: linear-gradient(3600deg, rgb(0, 69, 71) 20%, rgb(1, 98, 122) 100%);
+  background-image: linear-gradient(3600deg, rgb(0, 69, 71) 20%, rgb(1, 98, 122) 100%);
   box-shadow: 0px 5px 5px 0px rgb(90, 90, 90);
   color: white;
-  width: 90%;
-  margin: 1rem auto;
   padding: 1rem;
 }
